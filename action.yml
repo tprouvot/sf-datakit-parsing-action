@@ -1,0 +1,23 @@
+name: 'SF DataKit Parser'
+description: 'Decomposes the deploymentOrder of any changed Salesforce DataPackageKitDefinition metadata file and posts it as a PR comment.'
+branding:
+  icon: 'list'
+  color: 'blue'
+inputs:
+  github-token:
+    description: 'Token used to read/post the PR comment. Defaults to the workflow token.'
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: 'composite'
+  steps:
+    - name: Set up Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+
+    - name: Run data kit PR notifier
+      shell: bash
+      run: node "${{ github.action_path }}/dist/index.js"
+      env:
+        GITHUB_TOKEN: ${{ inputs.github-token }}

@@ -1,0 +1,20 @@
+{
+  "name": "sf-datakit-parsing-action",
+  "version": "0.1.0",
+  "description": "GitHub Action that decodes the deploymentOrder of a changed Salesforce DataPackageKitDefinition metadata file and posts the decomposed metadata list as a PR comment.",
+  "private": true,
+  "scripts": {
+    "build": "esbuild src/index.ts --bundle --platform=node --target=node20 --format=cjs --outfile=dist/index.js",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "esbuild": "^0.24.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}

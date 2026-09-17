@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DataPackageKitDefinition xmlns="http://soap.sforce.com/2006/04/metadata">
+    <dataKitSource>EXTERNAL</dataKitSource>
+    <dataKitType>NONE</dataKitType>
+    <dataSpaceDefinitionDevName>default</dataSpaceDefinitionDevName>
+    <deploymentOrder>{&quot;isAutoSequence&quot;:true,&quot;sequence&quot;:[{&quot;devName&quot;:&quot;Acme_Knowledge_Article&quot;,&quot;type&quot;:&quot;DataStream&quot;},{&quot;devName&quot;:&quot;Acme_UserFAQ_Kav1&quot;,&quot;type&quot;:&quot;DataSemanticSearch&quot;,&quot;id&quot;:&quot;18lAP000001Eug5YAC&quot;},{&quot;devName&quot;:&quot;Acme_User_FAQ_Kav&quot;,&quot;type&quot;:&quot;DataSemanticSearch&quot;,&quot;id&quot;:&quot;18lAP000001PkyLYAS&quot;}]}</deploymentOrder>
+    <description>Data kit for sample v1 implementations deployment</description>
+    <developerName>Acme_Sample_V1</developerName>
+    <isDeployed>false</isDeployed>
+    <isEnabled>false</isEnabled>
+    <masterLabel>Acme - Sample V1</masterLabel>
+    <useDeterministicNaming>false</useDeterministicNaming>
+    <versionNumber>8.0</versionNumber>
+</DataPackageKitDefinition>
