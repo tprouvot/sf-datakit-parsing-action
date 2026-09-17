@@ -1,4 +1,4 @@
-name: 'SF DataKit Parser'
+name: 'Salesforce DataKit Parser'
 description: 'Decomposes the deploymentOrder of any changed Salesforce DataPackageKitDefinition metadata file and posts it as a PR comment.'
 branding:
   icon: 'list'
